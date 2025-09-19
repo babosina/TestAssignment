@@ -46,24 +46,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 🧪 Running Tests
-
-### Run all tests:
-
-```bash
-python -m pytest
-```
-
-### Run tests with coverage:
-
-```bash
-python -m pytest --cov=. --cov-report=html
-```
-
 ### Example Solution Format:
 
 ```python
-def two_sum(nums: List[int], target: int) -> List[int]:
+def two_sum(nums: list[int], target: int) -> list[int]:
     """
     Find two numbers in the array that add up to the target sum.
     
@@ -73,9 +59,6 @@ def two_sum(nums: List[int], target: int) -> List[int]:
         
     Returns:
         List containing indices of the two numbers
-        
-    Time Complexity: O(n)
-    Space Complexity: O(n)
     
     Example:
         >>> two_sum([2, 7, 11, 15], 9)
