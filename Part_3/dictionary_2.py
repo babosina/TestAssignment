@@ -9,7 +9,7 @@ def find_dupes('''define'''):
 
 y = {1: 'a', 4: 'b', 2: 'c', 100: 'e'}
 z = {2: 'a', 4: 'b', 9: 'c', 101: 'd'}
-assert find_dupes(y, z) == (('a','b','c'), (2,))
+assert find_dupes(y, z) == (('a','b','c'), (2, 4))
 assert find_dupes(y) == (('a','b','c','e'), (1,2,4,100))
 """
 
