@@ -35,3 +35,4 @@ def test_get_s_key_val():
     assert get_s_key_val(x, True) == [1, 2, 4, 100]
     assert get_s_key_val(x, False) == ['a', 'b', 'c', 'e']
     assert get_s_key_val({}) == []
+    assert get_s_key_val({"a":"b"}, True) == ["a"]
